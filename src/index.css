@@ -5,6 +5,7 @@
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
+<<<<<<< HEAD
       --tw-rotate-x: rotateX(0);
       --tw-rotate-y: rotateY(0);
       --tw-rotate-z: rotateZ(0);
@@ -12,6 +13,9 @@
       --tw-skew-y: skewY(0);
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
+=======
+      --tw-space-y-reverse: 0;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
       --tw-gradient-via: #0000;
@@ -21,6 +25,7 @@
       --tw-gradient-from-position: 0%;
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
+<<<<<<< HEAD
       --tw-font-weight: initial;
       --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
@@ -37,6 +42,10 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+=======
+      --tw-leading: initial;
+      --tw-tracking: initial;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -50,6 +59,7 @@
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
+<<<<<<< HEAD
       --tw-backdrop-blur: initial;
       --tw-backdrop-brightness: initial;
       --tw-backdrop-contrast: initial;
@@ -61,6 +71,8 @@
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
       --tw-ease: initial;
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     }
   }
 }
@@ -69,6 +81,7 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+<<<<<<< HEAD
     --color-red-400: oklch(.704 .191 22.216);
     --color-red-500: oklch(.637 .237 25.331);
     --color-red-600: oklch(.577 .245 27.325);
@@ -89,10 +102,24 @@
     --color-pink-500: oklch(.656 .241 354.308);
     --color-pink-600: oklch(.592 .249 .584);
     --color-gray-100: oklch(.967 .003 264.542);
+=======
+    --color-orange-200: oklch(.901 .076 70.697);
+    --color-orange-300: oklch(.837 .128 66.29);
+    --color-orange-400: oklch(.75 .183 55.934);
+    --color-yellow-100: oklch(.973 .071 103.193);
+    --color-yellow-200: oklch(.945 .129 101.54);
+    --color-blue-900: oklch(.379 .146 265.522);
+    --color-pink-200: oklch(.899 .061 343.231);
+    --color-pink-300: oklch(.823 .12 346.018);
+    --color-pink-400: oklch(.718 .202 349.761);
+    --color-slate-300: oklch(.869 .022 252.894);
+    --color-slate-900: oklch(.208 .042 265.755);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
     --container-4xl: 56rem;
+<<<<<<< HEAD
     --container-6xl: 72rem;
     --container-7xl: 80rem;
     --text-xs: .75rem;
@@ -101,10 +128,14 @@
     --text-sm--line-height: calc(1.25 / .875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
+=======
+    --text-base: 1rem;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-2xl: 1.5rem;
+<<<<<<< HEAD
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -116,6 +147,21 @@
     --ease-out: cubic-bezier(0, 0, .2, 1);
     --blur-xl: 24px;
     --blur-2xl: 40px;
+=======
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --tracking-wider: .05em;
+    --tracking-widest: .1em;
+    --leading-relaxed: 1.625;
+    --blur-sm: 8px;
+    --blur-xl: 24px;
+    --blur-2xl: 40px;
+    --blur-3xl: 64px;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     --default-transition-duration: .15s;
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-sans);
@@ -446,22 +492,29 @@
     position: absolute;
   }
 
+<<<<<<< HEAD
   .fixed {
     position: fixed;
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .relative {
     position: relative;
   }
 
+<<<<<<< HEAD
   .sticky {
     position: sticky;
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
 
+<<<<<<< HEAD
   .inset-y-0 {
     inset-block: calc(var(--spacing) * 0);
   }
@@ -470,6 +523,8 @@
     top: -50%;
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -478,14 +533,20 @@
     top: 50%;
   }
 
+<<<<<<< HEAD
   .top-32 {
     top: calc(var(--spacing) * 32);
+=======
+  .top-1\/3 {
+    top: 33.3333%;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
 
+<<<<<<< HEAD
   .right-20 {
     right: calc(var(--spacing) * 20);
   }
@@ -494,14 +555,19 @@
     bottom: calc(var(--spacing) * -1);
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
 
+<<<<<<< HEAD
   .bottom-16 {
     bottom: calc(var(--spacing) * 16);
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -510,6 +576,7 @@
     left: 50%;
   }
 
+<<<<<<< HEAD
   .left-20 {
     left: calc(var(--spacing) * 20);
   }
@@ -518,26 +585,35 @@
     z-index: 0;
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .z-10 {
     z-index: 10;
   }
 
+<<<<<<< HEAD
   .z-20 {
     z-index: 20;
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .z-30 {
     z-index: 30;
   }
 
+<<<<<<< HEAD
   .z-40 {
     z-index: 40;
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .z-50 {
     z-index: 50;
   }
 
+<<<<<<< HEAD
   .z-\[90\] {
     z-index: 90;
   }
@@ -560,12 +636,47 @@
 
   .z-\[9999\] {
     z-index: 9999;
+=======
+  .container {
+    width: 100%;
+  }
+
+  @media (width >= 40rem) {
+    .container {
+      max-width: 40rem;
+    }
+  }
+
+  @media (width >= 48rem) {
+    .container {
+      max-width: 48rem;
+    }
+  }
+
+  @media (width >= 64rem) {
+    .container {
+      max-width: 64rem;
+    }
+  }
+
+  @media (width >= 80rem) {
+    .container {
+      max-width: 80rem;
+    }
+  }
+
+  @media (width >= 96rem) {
+    .container {
+      max-width: 96rem;
+    }
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .mx-auto {
     margin-inline: auto;
   }
 
+<<<<<<< HEAD
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -590,10 +701,13 @@
     margin-bottom: calc(var(--spacing) * 2);
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
 
+<<<<<<< HEAD
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -622,10 +736,13 @@
     display: block;
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .flex {
     display: flex;
   }
 
+<<<<<<< HEAD
   .grid {
     display: grid;
   }
@@ -696,6 +813,30 @@
 
   .h-\[500px\] {
     height: 500px;
+=======
+  .h-1\/2 {
+    height: 50%;
+  }
+
+  .h-1\/3 {
+    height: 33.3333%;
+  }
+
+  .h-1\/4 {
+    height: 25%;
+  }
+
+  .h-2\/5 {
+    height: 40%;
+  }
+
+  .h-\[60\%\] {
+    height: 60%;
+  }
+
+  .h-\[80\%\] {
+    height: 80%;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .h-full {
@@ -706,14 +847,20 @@
     height: 100vh;
   }
 
+<<<<<<< HEAD
   .min-h-screen {
     min-height: 100vh;
+=======
+  .min-h-\[300vh\] {
+    min-height: 300vh;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
 
+<<<<<<< HEAD
   .w-1\/2 {
     width: 50%;
   }
@@ -760,20 +907,44 @@
 
   .w-\[400px\] {
     width: 400px;
+=======
+  .w-1\/4 {
+    width: 25%;
+  }
+
+  .w-\[60\%\] {
+    width: 60%;
+  }
+
+  .w-\[80\%\] {
+    width: 80%;
+  }
+
+  .w-\[200\%\] {
+    width: 200%;
+  }
+
+  .w-\[250\%\] {
+    width: 250%;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .w-full {
     width: 100%;
   }
 
+<<<<<<< HEAD
   .w-screen {
     width: 100vw;
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .max-w-4xl {
     max-width: var(--container-4xl);
   }
 
+<<<<<<< HEAD
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
@@ -784,6 +955,10 @@
 
   .flex-shrink-0 {
     flex-shrink: 0;
+=======
+  .origin-center {
+    transform-origin: center;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .-translate-x-1\/2 {
@@ -796,6 +971,7 @@
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
 
+<<<<<<< HEAD
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
@@ -810,20 +986,28 @@
 
   .flex-wrap {
     flex-wrap: wrap;
+=======
+  .rotate-12 {
+    rotate: 12deg;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .items-center {
     align-items: center;
   }
 
+<<<<<<< HEAD
   .justify-between {
     justify-content: space-between;
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .justify-center {
     justify-content: center;
   }
 
+<<<<<<< HEAD
   .gap-0 {
     gap: calc(var(--spacing) * 0);
   }
@@ -866,12 +1050,19 @@
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
     margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+=======
+  :where(.space-y-8 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .overflow-hidden {
     overflow: hidden;
   }
 
+<<<<<<< HEAD
   .overflow-visible {
     overflow: visible;
   }
@@ -1022,6 +1213,14 @@
     .bg-white\/10 {
       background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
     }
+=======
+  .bg-black {
+    background-color: var(--color-black);
+  }
+
+  .bg-slate-900 {
+    background-color: var(--color-slate-900);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .bg-gradient-to-b {
@@ -1029,11 +1228,14 @@
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
 
+<<<<<<< HEAD
   .bg-gradient-to-br {
     --tw-gradient-position: to bottom right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
@@ -1044,12 +1246,18 @@
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
 
+<<<<<<< HEAD
   .from-black\/80 {
     --tw-gradient-from: #000c;
+=======
+  .from-blue-900\/10 {
+    --tw-gradient-from: color-mix(in srgb, oklch(.379 .146 265.522) 10%, transparent);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
   @supports (color: color-mix(in lab, red, red)) {
+<<<<<<< HEAD
     .from-black\/80 {
       --tw-gradient-from: color-mix(in oklab, var(--color-black) 80%, transparent);
     }
@@ -1057,10 +1265,20 @@
 
   .from-black\/90 {
     --tw-gradient-from: #000000e6;
+=======
+    .from-blue-900\/10 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-blue-900) 10%, transparent);
+    }
+  }
+
+  .from-orange-200\/20 {
+    --tw-gradient-from: color-mix(in srgb, oklch(.901 .076 70.697) 20%, transparent);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
   @supports (color: color-mix(in lab, red, red)) {
+<<<<<<< HEAD
     .from-black\/90 {
       --tw-gradient-from: color-mix(in oklab, var(--color-black) 90%, transparent);
     }
@@ -1108,11 +1326,92 @@
 
   .via-black\/70 {
     --tw-gradient-via: #000000b3;
+=======
+    .from-orange-200\/20 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-orange-200) 20%, transparent);
+    }
+  }
+
+  .from-orange-300\/40 {
+    --tw-gradient-from: color-mix(in srgb, oklch(.837 .128 66.29) 40%, transparent);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .from-orange-300\/40 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-orange-300) 40%, transparent);
+    }
+  }
+
+  .from-orange-400\/10 {
+    --tw-gradient-from: color-mix(in srgb, oklch(.75 .183 55.934) 10%, transparent);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .from-orange-400\/10 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-orange-400) 10%, transparent);
+    }
+  }
+
+  .from-orange-400\/20 {
+    --tw-gradient-from: color-mix(in srgb, oklch(.75 .183 55.934) 20%, transparent);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .from-orange-400\/20 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-orange-400) 20%, transparent);
+    }
+  }
+
+  .from-transparent {
+    --tw-gradient-from: transparent;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .from-white\/3 {
+    --tw-gradient-from: #ffffff08;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .from-white\/3 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-white) 3%, transparent);
+    }
+  }
+
+  .from-white\/5 {
+    --tw-gradient-from: #ffffff0d;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .from-white\/5 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+
+  .from-yellow-200\/30 {
+    --tw-gradient-from: color-mix(in srgb, oklch(.945 .129 101.54) 30%, transparent);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .from-yellow-200\/30 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-yellow-200) 30%, transparent);
+    }
+  }
+
+  .via-orange-200\/10 {
+    --tw-gradient-via: color-mix(in srgb, oklch(.901 .076 70.697) 10%, transparent);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
 
   @supports (color: color-mix(in lab, red, red)) {
+<<<<<<< HEAD
     .via-black\/70 {
       --tw-gradient-via: color-mix(in oklab, var(--color-black) 70%, transparent);
     }
@@ -1120,40 +1419,97 @@
 
   .via-orange-400 {
     --tw-gradient-via: var(--color-orange-400);
+=======
+    .via-orange-200\/10 {
+      --tw-gradient-via: color-mix(in oklab, var(--color-orange-200) 10%, transparent);
+    }
+  }
+
+  .via-pink-200\/10 {
+    --tw-gradient-via: color-mix(in srgb, oklch(.899 .061 343.231) 10%, transparent);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
 
+<<<<<<< HEAD
   .via-orange-500 {
     --tw-gradient-via: var(--color-orange-500);
+=======
+  @supports (color: color-mix(in lab, red, red)) {
+    .via-pink-200\/10 {
+      --tw-gradient-via: color-mix(in oklab, var(--color-pink-200) 10%, transparent);
+    }
+  }
+
+  .via-pink-300\/20 {
+    --tw-gradient-via: color-mix(in srgb, oklch(.823 .12 346.018) 20%, transparent);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
 
+<<<<<<< HEAD
   .via-pink-400 {
     --tw-gradient-via: var(--color-pink-400);
+=======
+  @supports (color: color-mix(in lab, red, red)) {
+    .via-pink-300\/20 {
+      --tw-gradient-via: color-mix(in oklab, var(--color-pink-300) 20%, transparent);
+    }
+  }
+
+  .via-pink-400\/10 {
+    --tw-gradient-via: color-mix(in srgb, oklch(.718 .202 349.761) 10%, transparent);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
 
+<<<<<<< HEAD
   .via-pink-600 {
     --tw-gradient-via: var(--color-pink-600);
+=======
+  @supports (color: color-mix(in lab, red, red)) {
+    .via-pink-400\/10 {
+      --tw-gradient-via: color-mix(in oklab, var(--color-pink-400) 10%, transparent);
+    }
+  }
+
+  .via-slate-900\/80 {
+    --tw-gradient-via: color-mix(in srgb, oklch(.208 .042 265.755) 80%, transparent);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
 
+<<<<<<< HEAD
+=======
+  @supports (color: color-mix(in lab, red, red)) {
+    .via-slate-900\/80 {
+      --tw-gradient-via: color-mix(in oklab, var(--color-slate-900) 80%, transparent);
+    }
+  }
+
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .via-transparent {
     --tw-gradient-via: transparent;
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
 
+<<<<<<< HEAD
   .via-white {
     --tw-gradient-via: var(--color-white);
+=======
+  .via-white\/2 {
+    --tw-gradient-via: #ffffff05;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
 
+<<<<<<< HEAD
   .to-black {
     --tw-gradient-to: var(--color-black);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -1196,6 +1552,109 @@
 
   .to-red-600 {
     --tw-gradient-to: var(--color-red-600);
+=======
+  @supports (color: color-mix(in lab, red, red)) {
+    .via-white\/2 {
+      --tw-gradient-via: color-mix(in oklab, var(--color-white) 2%, transparent);
+    }
+  }
+
+  .via-white\/3 {
+    --tw-gradient-via: #ffffff08;
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .via-white\/3 {
+      --tw-gradient-via: color-mix(in oklab, var(--color-white) 3%, transparent);
+    }
+  }
+
+  .via-white\/4 {
+    --tw-gradient-via: #ffffff0a;
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .via-white\/4 {
+      --tw-gradient-via: color-mix(in oklab, var(--color-white) 4%, transparent);
+    }
+  }
+
+  .via-white\/5 {
+    --tw-gradient-via: #ffffff0d;
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .via-white\/5 {
+      --tw-gradient-via: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+
+  .via-white\/30 {
+    --tw-gradient-via: #ffffff4d;
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .via-white\/30 {
+      --tw-gradient-via: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+
+  .via-yellow-100\/40 {
+    --tw-gradient-via: color-mix(in srgb, oklch(.973 .071 103.193) 40%, transparent);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .via-yellow-100\/40 {
+      --tw-gradient-via: color-mix(in oklab, var(--color-yellow-100) 40%, transparent);
+    }
+  }
+
+  .to-black\/20 {
+    --tw-gradient-to: #0003;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .to-black\/20 {
+      --tw-gradient-to: color-mix(in oklab, var(--color-black) 20%, transparent);
+    }
+  }
+
+  .to-black\/30 {
+    --tw-gradient-to: #0000004d;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .to-black\/30 {
+      --tw-gradient-to: color-mix(in oklab, var(--color-black) 30%, transparent);
+    }
+  }
+
+  .to-blue-900\/5 {
+    --tw-gradient-to: color-mix(in srgb, oklch(.379 .146 265.522) 5%, transparent);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .to-blue-900\/5 {
+      --tw-gradient-to: color-mix(in oklab, var(--color-blue-900) 5%, transparent);
+    }
+  }
+
+  .to-slate-900 {
+    --tw-gradient-to: var(--color-slate-900);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
@@ -1204,6 +1663,7 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
+<<<<<<< HEAD
   .to-white {
     --tw-gradient-to: var(--color-white);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -1223,10 +1683,13 @@
     background-clip: text;
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .object-cover {
     object-fit: cover;
   }
 
+<<<<<<< HEAD
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -1289,12 +1752,17 @@
 
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
+=======
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .py-32 {
     padding-block: calc(var(--spacing) * 32);
   }
 
+<<<<<<< HEAD
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
@@ -1303,10 +1771,13 @@
     padding-top: calc(var(--spacing) * 20);
   }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   .text-center {
     text-align: center;
   }
 
+<<<<<<< HEAD
   .align-middle {
     vertical-align: middle;
   }
@@ -1314,6 +1785,16 @@
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
+=======
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .text-lg {
@@ -1321,6 +1802,7 @@
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
 
+<<<<<<< HEAD
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -1344,6 +1826,11 @@
   .tracking-\[0\.4em\] {
     --tw-tracking: .4em;
     letter-spacing: .4em;
+=======
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .tracking-wider {
@@ -1356,6 +1843,7 @@
     letter-spacing: var(--tracking-widest);
   }
 
+<<<<<<< HEAD
   .text-black {
     color: var(--color-black);
   }
@@ -1378,12 +1866,17 @@
 
   .text-transparent {
     color: #0000;
+=======
+  .text-slate-300 {
+    color: var(--color-slate-300);
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .text-white {
     color: var(--color-white);
   }
 
+<<<<<<< HEAD
   .text-white\/40 {
     color: #fff6;
   }
@@ -1497,6 +1990,10 @@
   .shadow-xl {
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, #0000001a), 0 8px 10px -6px var(--tw-shadow-color, #0000001a);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+=======
+  .opacity-80 {
+    opacity: .8;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .blur {
@@ -1504,6 +2001,7 @@
     filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
   }
 
+<<<<<<< HEAD
   .filter {
     filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
   }
@@ -1518,6 +2016,30 @@
     --tw-backdrop-blur: blur(var(--blur-xl));
     -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
     backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+=======
+  .blur-2xl {
+    --tw-blur: blur(var(--blur-2xl));
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+  }
+
+  .blur-3xl {
+    --tw-blur: blur(var(--blur-3xl));
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+  }
+
+  .blur-sm {
+    --tw-blur: blur(var(--blur-sm));
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+  }
+
+  .blur-xl {
+    --tw-blur: blur(var(--blur-xl));
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+  }
+
+  .filter {
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 
   .transition {
@@ -1526,6 +2048,7 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
 
+<<<<<<< HEAD
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -1647,6 +2170,14 @@
     .lg\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
+=======
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .fade-in {
+    --tw-enter-opacity: 0;
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   }
 }
 
@@ -1750,6 +2281,7 @@ html {
   initial-value: 0;
 }
 
+<<<<<<< HEAD
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -1780,18 +2312,23 @@ html {
   initial-value: skewY(0);
 }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
   initial-value: 0;
 }
 
+<<<<<<< HEAD
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
 }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
 @property --tw-gradient-position {
   syntax: "*";
   inherits: false
@@ -1843,7 +2380,11 @@ html {
   initial-value: 100%;
 }
 
+<<<<<<< HEAD
 @property --tw-font-weight {
+=======
+@property --tw-leading {
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
   syntax: "*";
   inherits: false
 }
@@ -1853,6 +2394,7 @@ html {
   inherits: false
 }
 
+<<<<<<< HEAD
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -1932,6 +2474,8 @@ html {
   initial-value: 0 0 #0000;
 }
 
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
 @property --tw-blur {
   syntax: "*";
   inherits: false
@@ -1997,6 +2541,7 @@ html {
   syntax: "*";
   inherits: false
 }
+<<<<<<< HEAD
 
 @property --tw-backdrop-blur {
   syntax: "*";
@@ -2052,3 +2597,5 @@ html {
   syntax: "*";
   inherits: false
 }
+=======
+>>>>>>> 0b24ced (Adding hero section of the esummit page)
