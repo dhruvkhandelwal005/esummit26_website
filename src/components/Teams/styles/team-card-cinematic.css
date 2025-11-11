@@ -1,0 +1,216 @@
+/* ==================== Team Card - Cinematic Design ==================== */
+.team-card {
+  position: relative;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-default);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: background 0.8s ease, box-shadow 0.6s ease, border 0.6s ease, transform var(--duration-normal) var(--ease);
+  will-change: transform, box-shadow, background;
+  transform-style: preserve-3d;
+  display: flex !important;
+  flex-direction: column;
+  min-height: 320px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  /* Prevent cards from overlapping or breaking out of grid */
+  margin: 0;
+  isolation: isolate;
+  /* Force visibility */
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 6;
+}
+
+/* Frosted glass inner glow effect */
+.team-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--glass-gradient);
+  background-size: 100%;
+  background-position: center;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: var(--radius);
+  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+/* Card Image Container */
+.team-card .member-card-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f5f5f5;
+  z-index: 1;
+}
+
+.team-card .member-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease), filter var(--duration-slow) var(--ease);
+  /* Ensure images are sharp and clear */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: auto;
+  will-change: transform, filter;
+  transform-origin: center center;
+}
+
+/* Card Info Section */
+.team-card .member-info {
+  position: relative;
+  z-index: 2;
+  padding: var(--space);
+  background: var(--card-bg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.team-card .member-info h3 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  /* Warm dusk text color - dark brown for readability on light background */
+  color: #3a2920;
+  margin: 0 0 var(--space-sm) 0;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.team-card .member-role {
+  font-size: var(--font-size-sm);
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(95, 191, 200, 0.3);
+}
+
+/* Hover State - Cinematic Reveal with Clip-Path */
+.team-card {
+  position: relative;
+  overflow: visible;
+}
+
+.team-card::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(95, 191, 200, 0.25), rgba(255, 255, 255, 0.1), transparent);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  filter: blur(8px);
+  mix-blend-mode: screen;
+}
+
+.team-card:hover,
+.team-card.card-hover-active {
+  transform: translateY(var(--hover-lift)) scale(1.02);
+  box-shadow: var(--shadow-glow-hover);
+  background: var(--card-bg-hover);
+  border-color: var(--border-hover);
+}
+
+.team-card:hover::after,
+.team-card.card-hover-active::after {
+  opacity: 1;
+}
+
+.team-card:hover .member-card-image,
+.team-card.card-hover-active .member-card-image {
+  transform: scale(1.15);
+  filter: brightness(1.2) contrast(1.1);
+}
+
+/* Ink Bloom Reveal Effect (card entrance only) - disabled to prevent hiding */
+/* Cards should be visible immediately, animation is optional enhancement */
+/*
+@keyframes inkBloom {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+    opacity: 0;
+  }
+  50% {
+    clip-path: circle(60% at 50% 50%);
+    opacity: 0.8;
+  }
+  100% {
+    clip-path: circle(100% at 50% 50%);
+    opacity: 1;
+  }
+}
+
+.team-card {
+  animation: inkBloom 0.8s var(--ease) forwards;
+  animation-delay: calc(var(--card-index, 0) * 0.1s);
+}
+*/
+
+/* Focus State for Keyboard Navigation */
+.team-card:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+  transform: translateY(var(--hover-lift));
+}
+
+/* Active Focus Rim Light */
+.team-card.active-focus {
+  transform: translateZ(0.01px) scale(var(--focus-scale));
+}
+
+.team-card.active-focus::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(95, 191, 200, 0.2), transparent);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* Lead & Co-Lead Specific Styles */
+.team-card--lead {
+  border-top: 3px solid var(--accent);
+  box-shadow: var(--shadow-md), 0 0 20px rgba(95, 191, 200, 0.15);
+}
+
+.team-card--colead {
+  border-top: 3px solid var(--muted);
+}
+
+/* Additional Members (Web & App) */
+.team-card--additional {
+  min-height: 280px;
+}
+
+.team-card--additional .member-card-image-container {
+  height: 160px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-card {
+    min-height: 280px;
+  }
+  
+  .team-card .member-card-image-container {
+    height: 160px;
+  }
+}
+

@@ -1,0 +1,1132 @@
+/* ==================== Import Design Tokens ==================== */
+@import "./design-tokens.css";
+@import "./domain-section.css";
+@import "./team-card-cinematic.css";
+@import "./accessibility.css";
+
+/* ==================== Team Cinematic Container ==================== */
+.team-cinematic {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--bg-gradient);
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  /* Warm dusk base inherited from body */
+}
+
+.team-cinematic-content {
+  position: relative;
+  width: 100%;
+}
+
+/* ==================== Chapter Intro ==================== */
+.chapter-intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* Warm dusk gradient matching hero section */
+  background: radial-gradient(
+    circle at center,
+    rgba(28, 20, 18, 0.95),
+    rgba(45, 30, 25, 0.85),
+    rgba(58, 41, 32, 0.8)
+  );
+  overflow: hidden;
+  will-change: transform, opacity;
+}
+
+.kanji-background {
+  font-size: 20rem;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "Meiryo",
+    serif;
+  opacity: 0.08;
+  color: #e5e5e5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  will-change: transform, opacity;
+  transition: opacity 0.3s ease;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.chapter-intro-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  will-change: transform, opacity;
+}
+
+.chapter-intro-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  margin: 0 0 1rem 0;
+  animation: fadeIn 1s ease-in-out;
+  text-shadow: 0 2px 8px rgba(28, 20, 18, 0.6),
+    0 0 20px rgba(95, 191, 200, 0.25), 0 0 10px rgba(212, 165, 116, 0.2);
+}
+
+.chapter-intro-text p {
+  font-style: italic;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  color: var(--text-secondary);
+  margin: 0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== Chapter Scene ==================== */
+.chapter-scene {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* No background texture - textures are on individual domain sections */
+  background: var(--bg-gradient);
+  overflow: visible;
+  text-align: center;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  margin: 0;
+  clear: both;
+  gap: 2rem;
+  padding: var(--space-xl) 0;
+  /* Smooth fade transitions between sections */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Global Background Layer with Parallax */
+.layer-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0.4;
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+/* Scene background layer removed - textures now on individual domain sections */
+
+.chapter-fog-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.2;
+  /* Ensure fog doesn't block content */
+}
+
+.scene-content {
+  position: relative;
+  z-index: 10;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-lg) 0;
+  transform-style: preserve-3d;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  will-change: transform, opacity;
+  /* Ensure crisp rendering */
+  filter: none;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* ==================== Chapter Header ==================== */
+.chapter-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.chapter-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 8px rgba(28, 20, 18, 0.6),
+    0 0 20px rgba(95, 191, 200, 0.25), 0 0 10px rgba(212, 165, 116, 0.2);
+  will-change: transform, opacity;
+}
+
+.chapter-subtitle {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin: 0;
+  will-change: transform, opacity;
+}
+
+/* ==================== Chapter Domains Grid ==================== */
+.chapter-domains {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-xl);
+  justify-content: center;
+  align-items: start;
+  max-width: 95%;
+  margin: 0 auto;
+  perspective: 1200px;
+  width: 100%;
+  padding: 0 var(--space-md);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 20;
+  visibility: visible !important;
+  opacity: 1 !important;
+  /* Prevent grid items from overlapping */
+  grid-auto-rows: min-content;
+}
+
+.chapter-domains > .domain-section {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Ensure domain sections don't overlap in grid */
+.chapter-domains > * {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .chapter-domains {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    padding: 0 var(--space);
+  }
+}
+
+@media (max-width: 768px) {
+  .chapter-domains {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    padding: 0 var(--space);
+  }
+}
+
+/* ==================== Domain Cluster ==================== */
+.domain-cluster {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.5rem 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 18px;
+  border: 1px solid rgba(212, 165, 116, 0.3);
+  box-shadow: 0 8px 32px rgba(28, 20, 18, 0.4),
+    0 0 20px rgba(212, 165, 116, 0.1);
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  transition: transform 0.8s ease, box-shadow 0.8s ease, border-color 0.8s ease;
+  overflow: visible !important;
+  /* Force visible - override any GSAP or other styles */
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: flex !important;
+  transform: scale(1) translateZ(0) !important;
+  filter: none !important;
+  min-height: 400px;
+  justify-content: flex-start;
+  z-index: 30 !important;
+  /* Transparent container with warm dusk blend */
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Subtle gradient overlay with warm dusk tones */
+.domain-cluster::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 220, 180, 0.12) 0%,
+    rgba(212, 165, 116, 0.08) 50%,
+    rgba(95, 191, 200, 0.06) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+  transition: background 0.8s ease;
+  box-shadow: inset 0 0 40px rgba(255, 220, 180, 0.1),
+    inset 0 0 20px rgba(95, 191, 200, 0.05);
+}
+
+.domain-cluster > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Active focus state - sharp and clear */
+.domain-cluster.active-focus {
+  opacity: 1;
+  scale: 1.02;
+  filter: none;
+  transform: scale(1.02);
+  transition: all 0.8s ease-out;
+}
+
+.domain-cluster.active-focus::before {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 220, 180, 0.15) 0%,
+    rgba(212, 165, 116, 0.12) 50%,
+    rgba(95, 191, 200, 0.1) 100%
+  );
+  box-shadow: inset 0 0 50px rgba(255, 220, 180, 0.15),
+    inset 0 0 30px rgba(95, 191, 200, 0.08);
+}
+
+.domain-cluster:hover {
+  transform: translateY(-10px) scale(1.03);
+  border-color: rgba(95, 191, 200, 0.5);
+  box-shadow: 0 12px 40px rgba(28, 20, 18, 0.5),
+    0 0 30px rgba(95, 191, 200, 0.2);
+}
+
+.domain-cluster:hover::before {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 220, 180, 0.18) 0%,
+    rgba(212, 165, 116, 0.15) 50%,
+    rgba(95, 191, 200, 0.12) 100%
+  );
+  box-shadow: inset 0 0 50px rgba(255, 220, 180, 0.15),
+    inset 0 0 30px rgba(95, 191, 200, 0.08);
+}
+
+.domain-cluster-header {
+  text-align: center;
+}
+
+.domain-cluster-title {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 0 15px rgba(95, 191, 200, 0.15);
+  z-index: 40;
+  position: relative;
+}
+
+/* ==================== Crisp Image Rendering ==================== */
+.domain-cluster img,
+.member-card-image,
+.team-card-image {
+  object-fit: cover;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.member-card-image-container,
+.team-card-image-container {
+  position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  aspect-ratio: 3 / 4;
+  width: 100%;
+}
+
+/* Ensure member cards have consistent aspect ratio */
+.domain-cluster .member-card {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 3 / 4;
+}
+
+.domain-cluster-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  /* Prevent cards from overlapping */
+  overflow: visible;
+}
+
+.domain-cluster-cards > * {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  /* Prevent overlap */
+  isolation: isolate;
+  margin: 0;
+}
+
+/* Soft gradient behind cards for depth separation */
+.domain-cluster-cards::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.6;
+  transition: opacity 0.8s ease;
+}
+
+.domain-cluster.active-focus .domain-cluster-cards::before {
+  opacity: 0.8;
+}
+
+/* Web & App Domain Special Styling */
+.webdev-cluster {
+  grid-column: 1 / -1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.webdev-cluster .domain-cluster-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  /* Prevent cards from overlapping */
+  align-items: start;
+  justify-items: stretch;
+}
+
+.webdev-cluster .domain-cluster-cards > * {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  /* Prevent overlap */
+  isolation: isolate;
+  margin: 0;
+  overflow: hidden;
+}
+
+.webdev-cluster.expanded {
+  z-index: 10;
+}
+
+/* Additional Members Container (Web & App) */
+.additional-members-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  pointer-events: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, padding-top 0.6s ease, margin-top 0.6s ease;
+}
+
+.webdev-cluster.expanded .additional-members-container {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+  max-height: 500px;
+  padding-top: 1.5rem;
+  margin-top: 0;
+}
+
+.additional-member-card {
+  width: 100%;
+}
+
+/* ==================== Responsive Styles ==================== */
+@media (max-width: 1024px) {
+  .kanji-background {
+    font-size: 15rem;
+  }
+
+  .chapter-intro-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .chapter-intro-text p {
+    font-size: 1.1rem;
+  }
+
+  .chapter-title {
+    font-size: 3.5rem;
+  }
+
+  .chapter-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .chapter-domains {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 1.5rem;
+    max-width: 95%;
+  }
+
+  .domain-cluster-title {
+    font-size: 1.6rem;
+  }
+
+  .webdev-cluster .domain-cluster-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .scene-content {
+    padding: 5vh 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .kanji-background {
+    font-size: 12rem;
+  }
+
+  .chapter-intro-text h1 {
+    font-size: 2rem;
+  }
+
+  .chapter-intro-text p {
+    font-size: 1rem;
+  }
+
+  .chapter-scene {
+    min-height: auto;
+    padding: 6vh 0;
+  }
+
+  .scene-content {
+    gap: 3rem;
+    padding: 5vh 3vw;
+  }
+
+  .chapter-title {
+    font-size: 2.5rem;
+  }
+
+  .chapter-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .domain-cluster {
+    padding: 2rem 1.5rem;
+  }
+
+  .chapter-domains {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .domain-cluster {
+    padding: 1.5rem;
+  }
+
+  .domain-cluster-title {
+    font-size: 1.4rem;
+  }
+
+  .webdev-cluster {
+    grid-column: 1;
+  }
+
+  .webdev-cluster .domain-cluster-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .additional-members-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1440px) {
+  .chapter-intro {
+    height: 90vh;
+  }
+
+  .kanji-background {
+    font-size: 18rem;
+  }
+
+  .chapter-intro-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .chapter-intro-text p {
+    font-size: 1.15rem;
+  }
+
+  .chapter-title {
+    font-size: 4rem;
+  }
+
+  .chapter-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .chapter-domains {
+    gap: 2.5rem;
+    padding: 0 2rem;
+  }
+
+  .domain-cluster {
+    padding: 2rem 1.8rem;
+    min-height: 380px;
+  }
+
+  .domain-cluster-title {
+    font-size: 1.7rem;
+  }
+
+  .webdev-cluster .domain-cluster-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .chapter-intro {
+    height: 80vh;
+  }
+
+  .kanji-background {
+    font-size: 15rem;
+  }
+
+  .chapter-intro-text h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+
+  .chapter-intro-text p {
+    font-size: 1.1rem;
+  }
+
+  .chapter-title {
+    font-size: 3.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .chapter-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .scene-content {
+    gap: 2.5rem;
+    padding: 4vh 2vw;
+  }
+
+  .chapter-domains {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 1.5rem;
+    max-width: 95%;
+  }
+
+  .domain-cluster {
+    padding: 1.8rem 1.6rem;
+    min-height: 360px;
+    gap: 1.3rem;
+  }
+
+  .domain-cluster-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .domain-cluster-cards {
+    gap: 1.3rem;
+  }
+
+  .member-card {
+    width: 100%;
+  }
+
+  .webdev-cluster {
+    grid-column: 1 / -1;
+  }
+
+  .webdev-cluster .domain-cluster-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .additional-members-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .chapter-intro {
+    height: 70vh;
+    min-height: 70vh;
+    padding: 3vh 2vw;
+  }
+
+  .kanji-background {
+    font-size: 12rem;
+    opacity: 0.06;
+  }
+
+  .chapter-intro-text {
+    z-index: 3;
+  }
+
+  .chapter-intro-text h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    letter-spacing: 1px;
+  }
+
+  .chapter-intro-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .chapter-scene {
+    min-height: auto;
+    padding: 4vh 0;
+    gap: 2rem;
+  }
+
+  .scene-content {
+    gap: 2rem;
+    padding: 4vh 2vw;
+  }
+
+  .chapter-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .chapter-title {
+    font-size: 2.5rem;
+    letter-spacing: -0.01em;
+    text-shadow: 0 2px 6px rgba(28, 20, 18, 0.5),
+      0 0 15px rgba(95, 191, 200, 0.15);
+  }
+
+  .chapter-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .chapter-domains {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .domain-cluster {
+    padding: 1.5rem;
+    min-height: 340px;
+    gap: 1.2rem;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+  }
+
+  .domain-cluster::before {
+    opacity: 0.65;
+    box-shadow: inset 0 0 30px rgba(255, 220, 180, 0.08);
+  }
+
+  .domain-cluster-header {
+    margin-bottom: 0.5rem;
+  }
+
+  .domain-cluster-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .domain-cluster-cards {
+    gap: 1.2rem;
+  }
+
+  .member-card {
+    width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+  }
+
+  .member-card-image-container {
+    height: 200px;
+  }
+
+  .member-info {
+    padding: 1rem;
+  }
+
+  .member-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .member-role {
+    font-size: 0.85rem;
+  }
+
+  .webdev-cluster {
+    grid-column: 1;
+  }
+
+  .webdev-cluster .domain-cluster-cards {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .additional-members-container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .floating-lantern {
+    right: 2%;
+    top: 25%;
+    opacity: 0.25;
+  }
+
+  .floating-lantern svg {
+    width: 35px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 600px) {
+  .chapter-intro {
+    height: 60vh;
+    min-height: 60vh;
+    padding: 2.5vh 2vw;
+  }
+
+  .kanji-background {
+    font-size: 10rem;
+    opacity: 0.05;
+  }
+
+  .chapter-intro-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+  }
+
+  .chapter-intro-text p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .chapter-scene {
+    padding: 3vh 0;
+  }
+
+  .scene-content {
+    gap: 1.5rem;
+    padding: 3vh 2vw;
+  }
+
+  .chapter-title {
+    font-size: 2rem;
+    letter-spacing: 0px;
+  }
+
+  .chapter-subtitle {
+    font-size: 1rem;
+  }
+
+  .chapter-domains {
+    gap: 1.5rem;
+    padding: 0 0.8rem;
+  }
+
+  .domain-cluster {
+    padding: 1.3rem 1.2rem;
+    min-height: 320px;
+    gap: 1rem;
+  }
+
+  .domain-cluster-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .domain-cluster-cards {
+    gap: 1rem;
+  }
+
+  .member-card {
+    min-height: 280px;
+  }
+
+  .member-card-image-container {
+    height: 180px;
+  }
+
+  .member-info {
+    padding: 0.9rem;
+  }
+
+  .member-info h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .member-role {
+    font-size: 0.8rem;
+  }
+
+  .floating-lantern {
+    right: 2%;
+    opacity: 0.2;
+  }
+
+  .floating-lantern svg {
+    width: 30px;
+    height: 50px;
+  }
+
+  .animation-toggle {
+    bottom: 15px !important;
+    right: 15px !important;
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .chapter-intro {
+    height: 55vh;
+    min-height: 55vh;
+    padding: 2vh 1.5vw;
+  }
+
+  .kanji-background {
+    font-size: 8rem;
+  }
+
+  .chapter-intro-text h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .chapter-intro-text p {
+    font-size: 0.9rem;
+  }
+
+  .scene-content {
+    gap: 1.3rem;
+    padding: 2.5vh 1.5vw;
+  }
+
+  .chapter-title {
+    font-size: 1.8rem;
+    text-shadow: 0 1px 4px rgba(28, 20, 18, 0.4),
+      0 0 10px rgba(95, 191, 200, 0.1);
+  }
+
+  .chapter-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .chapter-domains {
+    gap: 1.3rem;
+    padding: 0 0.6rem;
+  }
+
+  .domain-cluster {
+    padding: 1.2rem 1rem;
+    min-height: 300px;
+    gap: 0.9rem;
+  }
+
+  .domain-cluster-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .domain-cluster-cards {
+    gap: 0.9rem;
+  }
+
+  .member-card {
+    min-height: 260px;
+  }
+
+  .member-card-image-container {
+    height: 160px;
+  }
+
+  .member-info {
+    padding: 0.8rem;
+  }
+
+  .member-info h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .member-role {
+    font-size: 0.75rem;
+  }
+
+  .floating-lantern {
+    right: 1.5%;
+    top: 30%;
+    opacity: 0.15;
+  }
+
+  .floating-lantern svg {
+    width: 25px;
+    height: 45px;
+  }
+
+  .animation-toggle {
+    bottom: 12px !important;
+    right: 12px !important;
+    padding: 5px 10px !important;
+    font-size: 11px !important;
+  }
+}
+
+/* ==================== Floating Lantern ==================== */
+.floating-lantern {
+  position: fixed;
+  top: 20%;
+  right: 5%;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.4;
+  will-change: transform;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+@media (max-width: 768px) {
+  .floating-lantern {
+    right: 3%;
+    opacity: 0.3;
+  }
+
+  .floating-lantern svg {
+    width: 40px;
+    height: 60px;
+  }
+}
+
+/* ==================== Loading Overlay ==================== */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(245, 240, 235, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  transition: opacity 0.5s ease;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==================== Lens Spotlight Effect ==================== */
+.lens-spotlight {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2),
+    transparent 70%
+  );
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  will-change: transform, opacity;
+  filter: blur(20px);
+}

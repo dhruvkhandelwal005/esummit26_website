@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Home, User, CalendarDays, Leaf } from "lucide-react";
+import { Phone, User, Info, CalendarDays, Leaf, MessageCircle } from "lucide-react";
 
 export function ScrollNavbar() {
   const [visible, setVisible] = useState(false);
@@ -44,29 +44,31 @@ export function ScrollNavbar() {
         >
           <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-3">
             {/* 🌸 Logo Section */}
-            <motion.div
+            <motion.a
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="flex flex-col leading-tight"
+              href="/"
+              className="flex flex-col leading-tight cursor-pointer"
             >
               <span className="text-sm text-[#ffb6c1] font-semibold tracking-widest drop-shadow-[0_0_4px_rgba(255,182,193,0.6)]">
                 E-SUMMIT
               </span>
               <span className="text-xs text-slate-200/80">2026–27</span>
-            </motion.div>
+            </motion.a>
 
             {/* 🌸 Navigation Links */}
             <div className="flex gap-8 text-sm font-medium">
               {[
-                { name: "Home", icon: <Home size={15} /> },
-                { name: "About", icon: <User size={15} /> },
-                { name: "Events", icon: <Leaf size={15} /> },
-                { name: "Schedule", icon: <CalendarDays size={15} /> },
+                { name: "About", icon: <Info size={15} />, href: "/about" },
+                { name: "Sponsors", icon: <Leaf size={15} />, href: "/sponsors" },
+                { name: "Schedule", icon: <CalendarDays size={15} />, href: "/schedule" },
+                { name: "Teams", icon: <User size={16} />, href: "/teams" },
+                { name: "Contact", icon: <Phone size={16} />, href: "/contact" },
               ].map((link, i) => (
                 <motion.a
                   key={i}
-                  href={`#${link.name.toLowerCase()}`}
+                  href={`/${link.name.toLowerCase()}`}
                   whileHover={{
                     scale: 1.1,
                     color: "#ffd6e0",
