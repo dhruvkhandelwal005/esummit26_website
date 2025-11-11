@@ -1,3 +1,5 @@
+@import "tailwindcss";
+@import "tw-animate-css";
 /*! tailwindcss v4.1.3 | MIT License | https://tailwindcss.com */
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
@@ -2051,4 +2053,16 @@ html {
 @property --tw-ease {
   syntax: "*";
   inherits: false
+}
+:root {
+  --background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
+  --foreground: #ffffff;
+}
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background-color: #0a0a0f !important;
+  color-scheme: dark;
 }

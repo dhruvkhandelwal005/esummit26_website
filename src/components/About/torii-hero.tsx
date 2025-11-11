@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, useMotionValue } from "motion/react";
-import toriiImage from "../assets/hero.jpg";
+import toriiImage from "../../assets/hero.jpg";
 import { SakuraPetals } from "./sakura-petals";
 import { MistLayers } from "./mist-layers";
 import { SunlightEffects } from "./sunlight-effects";
